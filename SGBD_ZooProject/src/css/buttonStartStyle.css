@@ -1,0 +1,20 @@
+.buttonStart
+{
+
+-fx-background-color :  #248439;
+-fx-background-radius :  100 100 100 100;
+}
+.buttonStart:hover
+{
+-fx-background-color : #239b3d ;
+-fx-background-radius :  100 100 100 100;
+}
+.buttonStart:pressed
+{
+-fx-background-color : #0d7c26 ;
+-fx-background-radius :  100 100 100 100;
+}
+
+.combo-box{
+-fx-pref-with:393
+}

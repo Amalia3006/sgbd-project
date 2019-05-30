@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="600.0" prefWidth="901.0" style="-fx-background-color: #53b253;">
+         <children>
+            <HBox layoutX="-1.0" layoutY="205.0" prefHeight="189.0" prefWidth="902.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#moveNextGuides" prefHeight="178.0" prefWidth="293.0" styleClass="buttonStart" stylesheets="@../css/buttonStartStyle.css" text="Guides">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="118.0" fitWidth="106.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Pics/guide.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#moveNextZOOKEEPERS" prefHeight="178.0" prefWidth="293.0" styleClass="buttonStart" stylesheets="@../css/buttonStartStyle.css" text="ZooKeepers">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="118.0" fitWidth="106.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Pics/m.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutX="304.0" layoutY="10.0" mnemonicParsing="false" onAction="#moveNextTickets" prefHeight="178.0" prefWidth="293.0" styleClass="buttonStart" stylesheets="@../css/buttonStartStyle.css" text="Tickets">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="118.0" fitWidth="106.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Pics/tickets.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </HBox>
+            <Label layoutX="240.0" layoutY="58.0" prefHeight="110.0" prefWidth="421.0" text="Zoo Land">
+               <font>
+                  <Font name="Georgia" size="96.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="164.0" fitWidth="167.0" layoutX="667.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" rotate="-25.3">
+               <image>
+                  <Image url="@../Pics/animal-prints.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="178.0" fitWidth="218.0" layoutX="44.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" rotate="-9.2">
+               <image>
+                  <Image url="@../Pics/jellyfish(1).png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="178.0" fitWidth="189.0" layoutX="361.0" layoutY="395.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Pics/owl.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="162.0" fitWidth="178.0" layoutX="76.0" layoutY="403.0" pickOnBounds="true" preserveRatio="true" rotate="-23.7">
+               <image>
+                  <Image url="@../Pics/eagle.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="164.0" fitWidth="204.0" layoutX="667.0" layoutY="409.0" pickOnBounds="true" preserveRatio="true" rotate="20.4">
+               <image>
+                  <Image url="@../Pics/seal.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>

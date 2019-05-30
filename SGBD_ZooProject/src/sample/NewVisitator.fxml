@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="649.0" prefWidth="990.0" style="-fx-background-color: #53b253;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Label layoutX="40.0" layoutY="37.0" prefHeight="47.0" prefWidth="265.0" text="Bilet nou">
+         <font>
+            <Font name="Georgia" size="65.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="112.0" prefHeight="30.0" prefWidth="424.0" text="Va rugam introduceti datele clientului:">
+         <font>
+            <Font name="Georgia" size="24.0" />
+         </font>
+      </Label>
+      <VBox layoutX="40.0" layoutY="155.0" prefHeight="175.0" prefWidth="191.0">
+         <children>
+            <Label prefHeight="30.0" prefWidth="166.0" text="First name">
+               <font>
+                  <Font name="Georgia" size="24.0" />
+               </font>
+            </Label>
+            <Label text="Last name">
+               <font>
+                  <Font name="Georgia" size="24.0" />
+               </font>
+            </Label>
+            <Label text="Address">
+               <font>
+                  <Font name="Georgia" size="24.0" />
+               </font>
+            </Label>
+            <Label text="Date of birth">
+               <font>
+                  <Font name="Georgia" size="24.0" />
+               </font>
+            </Label>
+            <Label text="Phone number">
+               <font>
+                  <Font name="Georgia" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox layoutX="209.0" layoutY="155.0" prefHeight="175.0" prefWidth="394.0">
+         <children>
+            <TextField fx:id="firstname" prefHeight="30.0" prefWidth="393.0" styleClass="buttonStart" stylesheets="@../css/buttonStartStyle.css" />
+            <TextField fx:id="lastname" prefHeight="30.0" prefWidth="393.0" styleClass="buttonStart" stylesheets="@../css/buttonStartStyle.css" />
+            <TextField fx:id="address" prefHeight="30.0" prefWidth="393.0" styleClass="buttonStart" stylesheets="@../css/buttonStartStyle.css" />
+            <TextField fx:id="data_nastere" styleClass="buttonStart" stylesheets="@../css/buttonStartStyle.css" />
+            <TextField fx:id="nr_telefon" prefHeight="30.0" prefWidth="393.0" styleClass="buttonStart" stylesheets="@../css/buttonStartStyle.css" />
+         </children>
+      </VBox>
+      <Button layoutX="22.0" layoutY="321.0" mnemonicParsing="false" onMouseClicked="#insert_persoana" prefHeight="85.0" prefWidth="284.0" styleClass="buttonStart" stylesheets="@../css/buttonStartStyle.css" text="Introdu persoana">
+         <font>
+            <Font name="Georgia" size="31.0" />
+         </font>
+      </Button>
+      <Button layoutX="345.0" layoutY="538.0" mnemonicParsing="false" onAction="#backToTicketsOptions" prefHeight="85.0" prefWidth="284.0" styleClass="buttonStart" stylesheets="@../css/buttonStartStyle.css" text="Anuleaza">
+         <font>
+            <Font name="Georgia" size="31.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="418.0" fitWidth="306.0" layoutX="638.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Pics/bear.png" />
+         </image>
+      </ImageView>
+      <VBox layoutX="33.0" layoutY="420.0" prefHeight="94.0" prefWidth="191.0">
+         <children>
+            <Label text="Ticket type">
+               <font>
+                  <Font name="Georgia" size="24.0" />
+               </font>
+            </Label>
+            <Label text="Visit date">
+               <font>
+                  <Font name="Georgia" size="24.0" />
+               </font>
+            </Label>
+            <Label prefHeight="30.0" prefWidth="82.0" text="Guide">
+               <font>
+                  <Font name="Georgia" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox layoutX="209.0" layoutY="420.0" prefHeight="111.0" prefWidth="394.0">
+         <children>
+            <TextField fx:id="ticket_type" editable="false" prefHeight="30.0" prefWidth="393.0" styleClass="buttonStart" stylesheets="@../css/buttonStartStyle.css" />
+            <TextField fx:id="data_program_ghizi_nou" styleClass="buttonStart" stylesheets="@../css/buttonStartStyle.css" />
+            <TextField fx:id="guidWanted" prefHeight="30.0" prefWidth="393.0" styleClass="buttonStart" stylesheets="@../css/buttonStartStyle.css" />
+         </children>
+      </VBox>
+      <Button layoutX="31.0" layoutY="538.0" mnemonicParsing="false" onMouseClicked="#elibereaza_bilet" prefHeight="85.0" prefWidth="284.0" styleClass="buttonStart" stylesheets="@../css/buttonStartStyle.css" text="Elibereaza Bilet">
+         <font>
+            <Font name="Georgia" size="31.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
